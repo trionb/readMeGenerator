@@ -44,7 +44,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "badge",
+    name: "language",
     message: "What language(s)did you use?"
   },
   {
@@ -75,7 +75,7 @@ function init() {
             let readMeGen = generateMarkdown(answers, profileAvatar, userEmail)
             console.log(readMeGen)
 
-            fs.writeFile("README2", readMeGen, function (err) {
+            fs.appendFile("README2.md", readMeGen, function (err) {
               if (err) {
                 throw err;
               }

@@ -1,8 +1,9 @@
-function generateMarkdown(data,profileAvatar,userEmail) {
+function generateMarkdown(data, profileAvatar, userEmail) {
   return `
 # ${data.projectName}
+### [${data.projectName}](${data.about})
     ## about: 
-    ${data.about}
+    ----------------
     ## Table Of Contents:
     * How To Install
     * Usage
@@ -10,20 +11,21 @@ function generateMarkdown(data,profileAvatar,userEmail) {
     * Contributors
     * Tests
     * GitHub
+    ----------------
     ## How To Install: 
-    ${data.install}
+   ### ${data.install}
     ## Usage:
-    ${data.usage}
+   ### ${data.usage}
     ## Bagde: 
-    ![img](https://img.shields.io/badge/${data.badge}-readme-red)
+   ### ![img](https://img.shields.io/badge/${data.badge}-readme-red)
     ## License:  
-    ${data.license}
+   ### ${data.license}
     ## Tests:
-    ${data.test}
+   ### ${data.test}
     ## Contributors:
-    ${data.contributing}
+   ### ${data.contributing}
     ## <img src = "${profileAvatar}" alt = "profile pic" width = "100"/>
-    ${data.email}
+   ### ${data.email}
 `;
 }
 
