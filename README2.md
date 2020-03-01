@@ -25,4 +25,5 @@
     ## Contributors:
    ### n/a
     ## <img src = "undefined" alt = "profile pic" width = "100"/>
-   ### trionbailey@gmail.com
+   ### trionb592@gmail.com
+

@@ -1,7 +1,8 @@
 function generateMarkdown(data, profileAvatar, userEmail) {
   return `
 # ${data.projectName}
-### [${data.projectName}](${data.about})
+### [${data.projectName}]
+# (${data.about})
     ## about: 
     ----------------
     ## Table Of Contents:
