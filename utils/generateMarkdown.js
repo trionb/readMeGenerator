@@ -24,7 +24,7 @@ function generateMarkdown(data, profileAvatar, userEmail) {
    ### ${data.test}
     ## Contributors:
    ### ${data.contributing}
-    ## <img src = "${profileAvatar}" alt = "profile pic" width = "100"/>
+    ## <img src = "${profileAvatar}" alt = "user's avatar"/>
    ### ${data.email}
 `;
 }
