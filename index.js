@@ -73,7 +73,7 @@ function init() {
             const profileAvatar = response.avatar_url
             const userEmail = response.email
             let readMeGen = generateMarkdown(answers, profileAvatar, userEmail)
-            console.log(readMeGen)
+            //console.log(readMeGen)
 
             fs.appendFile("README2.md", readMeGen, function (err) {
               if (err) {
