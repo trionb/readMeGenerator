@@ -69,9 +69,9 @@ function init() {
       //console.log(answers)
         axios
         .get(`https://api.github.com/users/${answers.username}`)
-          .then(function (response) {
-            const profileAvatar = response.avatar_url
-            const userEmail = response.email
+          .then(function (answers) {
+            const profileAvatar = answers.avatar_url
+            const userEmail = answers.email
             let readMeGen = generateMarkdown(answers, profileAvatar, userEmail)
             //console.log(readMeGen)
 

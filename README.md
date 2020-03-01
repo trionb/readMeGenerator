@@ -1,1 +1,1 @@
-# readMeGenerator
+In this repository, I created a readme generator call readme2.md which generates a simple readme file. In this readme, the user is prompted with various questions after which they are prompted to imput their answers.
